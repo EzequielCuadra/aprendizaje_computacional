@@ -1,0 +1,5 @@
+Sentiment analysis with Python
+
+Classifier with 3 diferent models of Deep Learning (LogisticRegression, Naive Bayes, LinearSVC)
+
+Data cleaning, creating models, training and predicting.
