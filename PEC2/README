@@ -1,0 +1,6 @@
+Dataset from : http://archive.ics.uci.edu/ml/datasets/Spambase
+Modified dataset
+
+Classify emails in spam or not spam
+
+KNN, SVM, NN classificators
