@@ -9,6 +9,10 @@ import nltk  # for text manipulation
 import pandas as pd # for data manipulation 
 
 # =============================================================================
+# ~ CSV downloaded from:https://www.kaggle.com/kazanova/sentiment140/activity
+# =============================================================================
+
+# =============================================================================
 # ~ Prepare the dataset
 # =============================================================================
 
@@ -21,11 +25,10 @@ data.columns = DATASET_COLUMNS
 # Drop the columns without importance for us
 data.drop(['ids','date','flag','user'],axis = 1,inplace = True)
 
-# Lets work with a subset from the dataset ## Updated to entire dataset 
+# Lets work with entire dataset 
 positif_data = data[data.target==4]
 negative_data = data[data.target==0]
 
-# Now, we have a dataset with 200000 rows
 data = pd.concat([positif_data,negative_data],axis = 0)
 print(data.shape)
 
